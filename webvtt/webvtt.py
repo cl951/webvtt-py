@@ -105,7 +105,7 @@ class WebVTT(object):
 
     def write(self, f, format='vtt'):
         if format == 'vtt':
-            WebVTTWriter().write(self._captions, f)
+            WebVTTWriter().write(self._captions, f, self._styles)
         elif format == 'srt':
             SRTWriter().write(self._captions, f)
 #        elif output_format == OutputFormat.SBV:
