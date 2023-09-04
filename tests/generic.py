@@ -8,3 +8,5 @@ class GenericParserTestCase(unittest.TestCase):
 
     def _get_file(self, filename):
         return os.path.join(self.SUBTITLES_DIR, filename)
+
+#%%
